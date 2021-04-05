@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>            
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="tbInput" AcceptsReturn="True" TextWrapping="Wrap">Input ở đây</TextBox>
+        <Button Grid.Row="1" x:Name="Run" Click="Run_Click">Thực thi</Button>
+        <TextBox Grid.Row="2" x:Name="tbOutput" AcceptsReturn="True" TextWrapping="Wrap">Output ở đây</TextBox>
     </Grid>
 </Window>
